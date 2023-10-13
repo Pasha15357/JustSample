@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64708F9E2AD98113001FE5A6 /* CreatureEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64708F9D2AD98113001FE5A6 /* CreatureEditor.swift */; };
+		64708F9F2AD98113001FE5A6 /* CreatureEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64708F9D2AD98113001FE5A6 /* CreatureEditor.swift */; };
+		64708FA12AD98F1E001FE5A6 /* CreatureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64708FA02AD98F1E001FE5A6 /* CreatureRow.swift */; };
+		64708FA22AD98F1E001FE5A6 /* CreatureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64708FA02AD98F1E001FE5A6 /* CreatureRow.swift */; };
+		64708FA42AD98F9E001FE5A6 /* ResizableFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64708FA32AD98F9E001FE5A6 /* ResizableFont.swift */; };
+		64708FA52AD98F9E001FE5A6 /* ResizableFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64708FA32AD98F9E001FE5A6 /* ResizableFont.swift */; };
+		64708FA72AD9C0C2001FE5A6 /* CreatureZoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64708FA62AD9C0C2001FE5A6 /* CreatureZoo.swift */; };
+		64708FA82AD9C0C2001FE5A6 /* CreatureZoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64708FA62AD9C0C2001FE5A6 /* CreatureZoo.swift */; };
 		64D67B5B2A81126700969975 /* JustSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D67B4B2A81126300969975 /* JustSampleApp.swift */; };
 		64D67B5C2A81126700969975 /* JustSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D67B4B2A81126300969975 /* JustSampleApp.swift */; };
 		64D67B5D2A81126700969975 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D67B4C2A81126300969975 /* ContentView.swift */; };
@@ -16,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64708F9D2AD98113001FE5A6 /* CreatureEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureEditor.swift; sourceTree = "<group>"; };
+		64708FA02AD98F1E001FE5A6 /* CreatureRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureRow.swift; sourceTree = "<group>"; };
+		64708FA32AD98F9E001FE5A6 /* ResizableFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableFont.swift; sourceTree = "<group>"; };
+		64708FA62AD9C0C2001FE5A6 /* CreatureZoo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureZoo.swift; sourceTree = "<group>"; };
 		64D67B4B2A81126300969975 /* JustSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustSampleApp.swift; sourceTree = "<group>"; };
 		64D67B4C2A81126300969975 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64D67B4D2A81126600969975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +69,10 @@
 				64D67B4B2A81126300969975 /* JustSampleApp.swift */,
 				64D67B4C2A81126300969975 /* ContentView.swift */,
 				64D67B4D2A81126600969975 /* Assets.xcassets */,
+				64708F9D2AD98113001FE5A6 /* CreatureEditor.swift */,
+				64708FA02AD98F1E001FE5A6 /* CreatureRow.swift */,
+				64708FA32AD98F9E001FE5A6 /* ResizableFont.swift */,
+				64708FA62AD9C0C2001FE5A6 /* CreatureZoo.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -178,6 +194,10 @@
 			files = (
 				64D67B5D2A81126700969975 /* ContentView.swift in Sources */,
 				64D67B5B2A81126700969975 /* JustSampleApp.swift in Sources */,
+				64708F9E2AD98113001FE5A6 /* CreatureEditor.swift in Sources */,
+				64708FA72AD9C0C2001FE5A6 /* CreatureZoo.swift in Sources */,
+				64708FA12AD98F1E001FE5A6 /* CreatureRow.swift in Sources */,
+				64708FA42AD98F9E001FE5A6 /* ResizableFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +207,10 @@
 			files = (
 				64D67B5E2A81126700969975 /* ContentView.swift in Sources */,
 				64D67B5C2A81126700969975 /* JustSampleApp.swift in Sources */,
+				64708F9F2AD98113001FE5A6 /* CreatureEditor.swift in Sources */,
+				64708FA82AD9C0C2001FE5A6 /* CreatureZoo.swift in Sources */,
+				64708FA22AD98F1E001FE5A6 /* CreatureRow.swift in Sources */,
+				64708FA52AD98F9E001FE5A6 /* ResizableFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

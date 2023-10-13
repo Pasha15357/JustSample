@@ -7,7 +7,13 @@
 
 import SwiftUI
 
+
+
+
+
 struct ContentView: View {
+    @StateObject var data = CreatureZoo()
+    
     @State var isOn = false
     
     @State var color = Color.primary
@@ -21,8 +27,32 @@ struct ContentView: View {
     @State var showStory = false
     
     var body: some View {
+        NavigationView {
+            List {
+                ForEach(data.creatures) { creature in
+                    CreatureRow(creature: creature)
+                }
+                .onDelete { indexSet in
+                    data.creatures.remove(atOffsets: indexSet)
+                }
+                NavigationLink("Forward") {
+                    CreatureEditor()
+                        .navigationTitle("Add creature")
+                }
+            }
+        }
+        .toolbar {
+            ToolbarItem {
+                NavigationLink("Add") {
+                    CreatureEditor()
+                        .navigationTitle("Add creature")
+                }
+            }
+        }
         
-        VStack {
+        
+        
+//        VStack {
 //            Group {
 //                Toggle("On/off", isOn: $isOn)
 //                ColorPicker("Select a color", selection: $color)
@@ -101,27 +131,27 @@ struct ContentView: View {
 //                Text("Hello, my name is \(name), my favorite hobby is \(hobby) and I can't stop eating \(favoriteFood)")
 //                    .padding()
 //            }
-
-
-            NavigationView {
-                List {
-                    NavigationLink {
-                        Text("Hello")
-                    } label : {
-                        HStack {
-                            Text("Tap to go to greeting")
-                            Spacer()
-                            Image(systemName: "arrowshape.bounce.right")
-                                .font(.largeTitle)
-                        }
-                    }
-                }
-            }
-
-            
-        }
-        .padding()
-        .navigationBarTitle("Meowww", displayMode: .inline) // Добавьте заголовок
+//
+//
+//            NavigationView {
+//                List {
+//                    NavigationLink {
+//                        Text("Hello")
+//                    } label : {
+//                        HStack {
+//                            Text("Tap to go to greeting")
+//                            Spacer()
+//                            Image(systemName: "arrowshape.bounce.right")
+//                                .font(.largeTitle)
+//                        }
+//                    }
+//                }
+//            }
+//
+//
+//        }
+//        .padding()
+//        .navigationBarTitle("Meowww", displayMode: .inline) // Добавьте заголовок
     }
 
 
