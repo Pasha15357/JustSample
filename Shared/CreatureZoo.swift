@@ -11,9 +11,8 @@ import SwiftUI
 
 /*#-code-walkthrough(creatureZoo.observableObject)*/
 class CreatureZoo : ObservableObject {
-    /*#-code-walkthrough(creatureZoo.observableObject)*/
-    /*#-code-walkthrough(creatureZoo.creatures)*/
-    /*#-code-walkthrough(creatureZoo.published)*/ @Published /*#-code-walkthrough(creatureZoo.published)*/var creatures = [
+    
+ @Published var creatures = [
         /*#-code-walkthrough(creatureZoo.creature)*/
         Creature(name: "Gorilla", emoji: "🦍"),
         /*#-code-walkthrough(creatureZoo.creature)*/

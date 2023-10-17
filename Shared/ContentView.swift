@@ -12,13 +12,15 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @StateObject var data = CreatureZoo()
+
     
     @State var isOn = false
     
     @State var color = Color.primary
     
     @State var width: Double = 0
+    
+    @StateObject var data = CreatureZoo()
     
     @State var name = ""
     @State var hobby = ""
@@ -30,7 +32,12 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(data.creatures) { creature in
-                    CreatureRow(creature: creature)
+                    NavigationLink {
+                        CreatureDetail(creature: creature)
+                            .navigationTitle(creature.name)
+                    } label: {
+                        CreatureRow(creature: creature)
+                    }
                 }
                 .onDelete { indexSet in
                     data.creatures.remove(atOffsets: indexSet)
